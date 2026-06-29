@@ -576,8 +576,9 @@ def serve_static(path):
     return send_from_directory(app.static_folder, 'index.html')
 
 # ─────────────────────────────────────────
+init_db()
 if __name__ == '__main__':
-    init_db()
+    
     print("\n🌸 Ayushi Life OS Backend Starting...")
     print("📦 Database:", DB_PATH)
     print("🌐 Open http://localhost:5000 in your browser")
